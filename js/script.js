@@ -7,11 +7,19 @@
 "use strict"
 
 function calculate() {
-  let answer = 0
-  let integer = parseInt(document.getElementById("integer").value)
+  let counter = 0
+  let firstInteger = parseInt(document.getElementById("integer-one").value)
+  let answer = firstInteger
+  let secondInteger = parseInt(document.getElementById("integer-two").value)
 
-  for (let counter = 1; counter <= integer; counter++) {
-    answer = answer + counter
+  while (true) {
+    if (answer < secondInteger) {
+      break
+    }
+    else {
+      answer = answer - secondInteger
+      counter = counter + 1
+    }
   }
-  document.getElementById('result').innerHTML = "<p>The product is " + answer + ".</p>"
+  document.getElementById('result').innerHTML = "<p>The quotient is " + counter + "Remainder " + answer + ".</p>"
 }
