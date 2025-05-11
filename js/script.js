@@ -21,5 +21,5 @@ function calculate() {
       counter = counter + 1
     }
   }
-  document.getElementById('result').innerHTML = "<p>The quotient is " + counter + "Remainder " + answer + ".</p>"
+  document.getElementById('result').innerHTML = "<p>The quotient is " + counter + ", remainder " + answer + ".</p>"
 }
